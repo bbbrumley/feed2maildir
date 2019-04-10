@@ -1,0 +1,20 @@
+From: Chris Warburton
+Date: Wed, 10 Apr 2019 10:37:14 +0100
+State: resolved
+Subject: Un-parenthesised 'print' breaks Python3
+Message-Id: <b1daf600969f0ef3-0-artemis@nixos>
+resolution: fixed
+
+From Mark Fiers:
+
+> Dear Chris,
+>
+> Thanks for the feed2maidlir script - it works perfectly - and I fully
+> agree with your lightweight approach.
+>
+> I'd like to point out one tiny problem, in `feed2maildir/convert.py`
+> there is /one/ print statement without parentheses, which made it fail
+> for me using python 3.6.
+>
+> thanks!
+> Mark

@@ -175,9 +175,9 @@ Link: {}
                         # We only expect one to be found
                         pass
                 if not foundfile:
-                    print "WARNING: couldn't find {} in {}".format(
+                    print("WARNING: couldn't find {} in {}".format(
                         messagefile,
-                        self.name)
+                        self.name))
             time.sleep(1)
         return list(set(hashes))
 
