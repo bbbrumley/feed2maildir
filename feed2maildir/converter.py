@@ -64,7 +64,7 @@ class Converter:
 Date: {}
 Subject: {}
 From: {}
-Content-Type: text/plain
+Content-Type: text/html; charset=UTF-8
 X-feed2maildirsimple-hash: {}
 
 Link: {}
@@ -205,7 +205,7 @@ Link: {}
         pid = str(os.getpid())
         host = os.uname()[1]
         self.delivered += 1
-        name = u'{}/new/{}.M{}R{:08x}Q{}P{}.{}'.format(self.maildir, int(dt), ticks, rand, self.delivered, pid, host)
+        name = u'{}/tmp/{}.M{}R{:08x}Q{}P{}.{}'.format(self.maildir, int(dt), ticks, rand, self.delivered, pid, host)
         try: # to write out the message
             with open(name, 'w') as f:
                 # We can thank the P2/P3 unicode madness for this...
